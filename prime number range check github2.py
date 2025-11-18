@@ -9,7 +9,7 @@ def is_prime(check_num):
         if check_num <= 1 :
             return False
         else:    
-            for i in range(2,int(check_num//2)):
+            for i in range(2,int(check_num//2)+1):
                 if check_num % i == 0:
                     return False
             return True
@@ -26,4 +26,5 @@ if prime_number_found :
      print(f'Prime Numbers Found Between {lower_limit} and {upper_limit} -{prime_number_found}')    
 else:
      print(f'No Prime Numbers Found Between {lower_limit} and  {upper_limit} ')           
+
 
